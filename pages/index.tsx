@@ -7,12 +7,12 @@ export default function Index() {
 			<div>
 				<h1 className="text-4xl">Jie Lin</h1>
 				<h3>Junior Software Developer</h3>
-				<p>This website is a heavy work in progress, but I hope you'll enjoy it regardless.</p>
+				<p>This website is a heavy work in progress, but I hope you&apos;ll enjoy it regardless.</p>
 			</div>
 			<br/>
 			<div>
 				<h2 className="text-2xl">Educational Experience</h2>
-				<h3 className="text-xl">Bachelor's of Science in Computer Science</h3>
+				<h3 className="text-xl">Bachelor&apos;s of Science in Computer Science</h3>
 				<p>
 					2023 - 2025<br/>
 					University of Utah
