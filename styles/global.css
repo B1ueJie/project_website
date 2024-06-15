@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body, html {
+		@apply font-nier font-light bg-tan text-brown /*bg-nier*/
+	}
+}
+
+body, html {
+	background-size: 0.3rem 0.3rem;
+}
