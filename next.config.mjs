@@ -14,8 +14,8 @@ const nextConfig = {
       }
     ]
   },
-  //basePath: "/project_website",
-  //assetPrefix: "/project_website"
+  basePath: "/project_website",
+  assetPrefix: "/project_website"
 };
 
 // module.exports = nextConfig;
