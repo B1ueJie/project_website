@@ -1,0 +1,14 @@
+{
+    "stars" : [
+        {
+            "id": "test",
+            "title": "testtitle",
+            "content": "this is some test content"
+        },
+        {
+            "id": "test2",
+            "title": "testtitle2",
+            "content": "this is some more test content"
+        }
+    ]
+}

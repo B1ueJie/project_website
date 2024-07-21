@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export default function ContentNav(props: ReactNode) {
+export default function SubMenu() {
     return (
         <div>
             
