@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 export default async function Home() {
-    redirect('/home');
+    const router = useRouter();
+    router.push('/home');
 }
