@@ -45,3 +45,33 @@ export async function getFileData(folderName: string, fileName: string) {
         contentHtml
     }
 }
+
+/**
+ * Returns the title and id for each file in a folder.
+ * @param folderName 
+ * @returns 
+ */
+export async function getFilesData(folderName: string) {
+    const folderPath = path.join(process.cwd(), folderName);
+    const fileNames = await fs.promises.readdir(folderPath);
+    const namesWithTitles = fileNames.map((fileName: string) => {
+        const id = fileName.replace(/\.mdx/, '');
+        
+        const fileContents = fs.readFileSync(path.join(process.cwd(), folderName, fileName));
+
+        const matterResult = matter(fileContents);
+        const title = matterResult.data.title;
+
+        return {
+            id,
+            title
+        }
+    });
+
+    // for (const nameWithTitle of namesWithTitles) {
+    //     console.log(nameWithTitle.id);
+    //     console.log(nameWithTitle.title);
+    // }
+
+    return namesWithTitles;
+}

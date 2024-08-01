@@ -11,9 +11,9 @@ export const siteTitle = 'Website';
 
 export default function Layout(props:Props) {
   return (
-    <div className="tracking-wide">
+    <div className="h-screen tracking-wide">
       <NavBar/>
-      <main className="p-4">{props.children}</main>
+      <main className="h-5/6 flex p-6">{props.children}</main>
     </div>
   );
 }
