@@ -1,4 +1,3 @@
-import '../styles/global.css';
 import NavBar from './navbar';
 import { ReactNode } from 'react';
 
