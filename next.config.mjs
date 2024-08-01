@@ -14,8 +14,8 @@ const nextConfig = {
     ]
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  // basePath: "/project_website",
-  // assetPrefix: "/project_website"
+  basePath: "/project_website",
+  assetPrefix: "/project_website"
 };
 
 // module.exports = nextConfig;
