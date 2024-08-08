@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function About() {
     return (
         <section>
-            <h1 className="text-4xl">About Me</h1>
             <p>
                 I got sucked into computer science because of the ideas of virtual reality presented in SAO, which is kind of one of my embarassing secrets.<br/>
                 Right now, I&apos;m into playing fighting games and being a coffee snob.

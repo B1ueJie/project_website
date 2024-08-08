@@ -12,7 +12,7 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 				"nier":
-					"linear-gradient(to right, #ccc8b1 1px, rgba(204,200,177,0) 1px), linear-gradient(to bottom, #ccc8b1 1px, rgba(204,200,177,0) 1px)"
+					"linear-gradient(to right, #a5b5c9 1px, rgba(179, 196, 214,0) 1px), linear-gradient(to bottom, #a5b5c9 1px, rgba(179, 196, 214,0) 1px)"
 			},
 			fontFamily: {
 				nier: ["Helvetica", "ui-sans-serif"]

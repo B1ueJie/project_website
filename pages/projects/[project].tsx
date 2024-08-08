@@ -1,14 +1,8 @@
-import { ReactNode } from "react";
-import ContentNav from "../../components/contentnav";
-import { getFileNames, getFileData, getFilesData } from "../../lib/helpers";
-import SubMenu from "@/components/submenu";
+import { getFileNames, getFileData, getFilesData } from '../../lib/helpers';
+import ContentNav from '@/components/contentnav';
+import SubMenu from '@/components/submenu';
 
-interface Props {
-    fileContent: { title: ReactNode, contentHtml: string };
-    files: any
-}
-
-export default function Post(props: Props) {
+export default function Project(props: any) {
     return (
         <section className="w-full items-center grid grid-cols-3 gap-10">
             <div>
@@ -20,22 +14,22 @@ export default function Post(props: Props) {
 }
 
 export async function getStaticProps(context: any) {
-    const data = await getFileData('homeinfo', context.params.id);
-    const filesData = await getFilesData('homeinfo');
+    const data = await getFileData('projects', context.params.project);
+    const filesData= await getFilesData('projects');
 
     return {
         props: {
             fileContent: data,
             files: filesData
         }
-    };
+    }
 }
 
-export async function getStaticPaths() {
-    const data = await getFileNames('homeinfo');
+export async function getStaticPaths(context: any) {
+    const data = await getFileNames('projects');
     const pathsWithParams = data.map((name: string) => {
         return {
-            params: {id: name}
+            params: {project: name}
         };
     });
     return {
